@@ -70,7 +70,7 @@ class _MyAppState extends State<MyApp> {
 
   Future<Null> fetchData() async {
   
-      final uri = Uri.parse("https://intranet.colegiocima.edu.pe:8087/api/v1/topic/list");
+      final uri = Uri.parse("https://api.colegiocima.edu.pe:8087/api/v1/topic/list");
       final response =
           await http.get(uri);
       if (response.statusCode == 200) {
